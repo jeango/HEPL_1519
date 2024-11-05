@@ -5,13 +5,30 @@ public class MovementController : MonoBehaviour
 {
 	public int Speed;
 	public Vector2 Direction;
+	public Rigidbody2D body;
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+	    if (!body || body.isKinematic)
+	    {
+		    Move();
+	    }
     }
 
+    void FixedUpdate()
+    {
+	    if (body && !body.isKinematic)
+	    {
+		    MoveDynamic();
+	    }
+    }
+
+    void MoveDynamic()
+    {
+	    body.velocity = Direction.normalized * Speed;
+    }
+    
 	void Move()
 	{
 		var currentPosition = transform.position;

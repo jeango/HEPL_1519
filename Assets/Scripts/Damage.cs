@@ -7,6 +7,8 @@ public class Damage : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
+        var body = other.attachedRigidbody;
+        if (!body) return;
         if (!tagsToIgnore.Contains(other.attachedRigidbody.tag))
         {
             Destroy(other.attachedRigidbody.gameObject);
