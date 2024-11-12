@@ -15,7 +15,11 @@ public class GameManager
 
     public static void GameOver()
     {
-        
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Additive);
     }
-    
+
+    public static void LoadMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
