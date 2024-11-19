@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -866649961369890825}
   - component: {fileID: -636765561998773979}
   - component: {fileID: -254115692832244127}
+  - component: {fileID: 3756997118267340415}
   m_Layer: 7
   m_Name: UFO_0
   m_TagString: Enemy
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   Direction: {x: -1, y: 0}
+  body: {fileID: 0}
 --- !u!50 &-866649961369890825
 Rigidbody2D:
   serializedVersion: 4
@@ -200,3 +202,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagsToIgnore:
   - Enemy
+  canKill: 1
+--- !u!114 &3756997118267340415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6531170121157549845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f2f56873ba04c6eb250944ab9d76b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 8248106402132516165, guid: f98aad32488b44d6392cc37ebe656929, type: 3}
+  scoreValue: 10
