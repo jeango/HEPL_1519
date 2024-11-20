@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -636765561998773979}
   - component: {fileID: -254115692832244127}
   - component: {fileID: 3756997118267340415}
+  - component: {fileID: 4949005506709361835}
   m_Layer: 7
   m_Name: UFO_0
   m_TagString: Enemy
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a58d7f2ad8ca47939a9e8ed8bce3c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 15
   Direction: {x: -1, y: 0}
   body: {fileID: 0}
 --- !u!50 &-866649961369890825
@@ -216,4 +217,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 8248106402132516165, guid: f98aad32488b44d6392cc37ebe656929, type: 3}
+  powerupGenerator: {fileID: 4949005506709361835}
   scoreValue: 10
+--- !u!114 &4949005506709361835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6531170121157549845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9bf8c5baf921411f9c3a58818364013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerups:
+  - {fileID: 4926956875411299827, guid: ce676845d90154e7ab434e71935c41ec, type: 3}
+  - {fileID: 4864372167105190083, guid: 93547604aac304dc097d96d8a8020353, type: 3}
+  powerupProbability: 0.355
