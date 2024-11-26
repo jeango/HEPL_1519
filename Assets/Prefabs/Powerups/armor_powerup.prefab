@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3913635923352590558}
   - component: {fileID: 2208429836545385188}
   - component: {fileID: 8680157277417639861}
-  m_Layer: 0
+  - component: {fileID: 4077346256727644856}
+  m_Layer: 9
   m_Name: armor_powerup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,3 +175,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4077346256727644856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926956875411299827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31233d64906c40d3b75e3f441ea3b1fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerup: {fileID: 0}

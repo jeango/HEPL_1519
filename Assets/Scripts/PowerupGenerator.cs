@@ -10,6 +10,11 @@ public class PowerupGenerator : MonoBehaviour
     
     private static List<GameObject> _activePowerups = new List<GameObject>();
 
+    void Start()
+    {
+        _activePowerups.Clear();
+    }
+    
     public static void ActivatePowerup(GameObject powerup, bool active)
     {
         if (!powerup)
