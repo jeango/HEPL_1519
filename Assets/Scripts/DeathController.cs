@@ -6,7 +6,7 @@ public class DeathController : MonoBehaviour
     public PowerupGenerator powerupGenerator;
     public int scoreValue;
 
-    public void Kill()
+    public virtual void Kill()
     {
         //Instantiate an explosion
         Instantiate(deathEffect, transform.position, Quaternion.identity);

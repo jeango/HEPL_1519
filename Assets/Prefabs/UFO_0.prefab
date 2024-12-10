@@ -234,4 +234,5 @@ MonoBehaviour:
   powerups:
   - {fileID: 4926956875411299827, guid: ce676845d90154e7ab434e71935c41ec, type: 3}
   - {fileID: 4864372167105190083, guid: 93547604aac304dc097d96d8a8020353, type: 3}
+  - {fileID: 3837116752052548897, guid: 5a43fa5db7becf048be2cde2c0cc338e, type: 3}
   powerupProbability: 0.355
